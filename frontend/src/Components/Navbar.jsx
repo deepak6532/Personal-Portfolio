@@ -55,11 +55,11 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {menuOpen && (
                 <div className="md:hidden bg-gray-800 text-white py-2 px-4 pb-4 space-y-2 font-semibold">
-                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer">Home</p>
-                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer">About</p>
-                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer">Skills</p>
-                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer">Project</p>
-                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer">Contact</p>
+                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer"> <Link to="/home">Home </Link></p>
+                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer"><Link to="/about">About </Link></p>
+                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer"><Link to="/skills">Skills </Link></p>
+                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer"><Link to="/project">Project</Link></p>
+                    <p className="hover:text-blue-400 transition duration-300 cursor-pointer"><Link to="/contact">Contact</Link></p>
                 </div>
             )}
         </>
